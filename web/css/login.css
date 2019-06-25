@@ -1,0 +1,100 @@
+.login-box {
+    width:404px;
+    margin:15px auto;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    box-shadow:0 4px 18px rgba(0,0,0,0.2);
+    position:relative;
+    overflow:hidden;
+    height:360px;
+}
+.register-box {
+    width:404px;
+    margin:15px auto;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    box-shadow:0 4px 18px rgba(0,0,0,0.2);
+    position:relative;
+    overflow:hidden;
+    height:600px;
+}
+.login{
+    position: absolute;
+    width:320;left:0;
+    top:50px;;
+    padding: 42px 42px 36px;
+    transition: all 0.8s;       /* 鼠标停留时的时间 */
+}
+.login-user{
+    margin-bottom: 40px;
+}
+.log-sub{
+    margin-bottom: 10px;
+}
+/* .btn {
+    height: 44px;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #9da3a6;
+    background: #fff;
+    text-overflow: ellipsis;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 1em;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    direction: ltr;
+    font-size:13px;
+} */
+.submit{
+    width:320px;
+}
+.submit:hover {
+    background-color:#005ea6;
+}
+.reset{
+    width: 320px;
+}
+.verBox {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    left:404px;
+    top:0;
+    opacity:0;
+    transition:all 0.8s;
+    padding-top:55px;
+}
+.err {
+    margin:12px 0 0;
+    line-height:12px;
+    height:12px;
+    font-size:12px;
+    color:red;
+}
+
+.middle{
+    text-align: center;
+    margin: 0 auto;
+    height: 10%;
+}
+
+.slider-btn{position:absolute;width:44px;height:44px;left:0;top:-7px;z-index:12;cursor:pointer;background-image:url(../img/sprite.3.2.0.png);background-position:0 -84px;transition:inherit}
+.ver-tips{position:absolute;left:0;bottom:-22px;background:rgba(255,255,255,.9);height:22px;line-height:22px;font-size:12px;width:100%;margin:0;text-align:left;padding:0 8px;transition:all .4s}
+.slider-tips{bottom:0}
+.ver-tips i{display:inline-block;width:22px;height:22px;vertical-align:top;background-image:url(../img/sprite.3.2.0.png);background-position:-4px -1229px}
+.ver-tips span{display:inline-block;vertical-align:top;line-height:22px;color:#455}
+.active-tips{display:block}
+.hidden{display:none}
+.re-btn{position:absolute;left:0;bottom:0;height:28px;padding:0 16px}
+.re-btn a{display:inline-block;width:14px;height:14px;margin:7px 0;background-image:url(../img/sprite.3.2.0.png);background-position:0 -1179px;cursor:pointer}
+.re-btn a:hover{background-position:0 -1193px}

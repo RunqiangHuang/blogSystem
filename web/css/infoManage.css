@@ -1,0 +1,56 @@
+.update-icon-box{
+    margin-left: 10px;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    padding:  10% 20% 0 20%;
+    position:relative;
+    overflow:hidden;
+    min-height: 800px;
+    margin-bottom: 10px;
+}
+.preview-box{
+
+    margin-left: 25px;
+    position:relative;
+    overflow:hidden;
+    min-height:800px;
+}
+.pages-list li{
+    text-align: left;
+}
+.pages-box{
+    width: 90%;
+    margin-top:1%;
+    padding: 10% 0 10% 10%;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    position: relative;
+    overflow:hidden;
+}
+.profile{
+    width: 90%;
+
+    padding: 10% 0 10% 0%;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    position: relative;
+    overflow:hidden;
+}
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color:red;
+    border-radius: 10px;
+}
+
+.badge:empty {
+    display: none;
+}

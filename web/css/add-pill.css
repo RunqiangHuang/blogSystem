@@ -1,0 +1,33 @@
+.add-pill-box{
+    width:620px;
+    margin:160px auto;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    box-shadow:0 4px 18px rgba(0,0,0,0.2);
+    position:relative;
+    overflow:hidden;
+    height:810px;
+}
+
+.add-pill{
+    position: absolute;
+    width:600px;left:0;
+    top:50px;;
+    padding: 42px 42px 36px;
+    transition: all 0.8s;       /* 鼠标停留时的时间 */
+}
+.input-group{
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+
+.input-group-addon{
+    width:85px;
+}
+.submit{
+    width:518px;
+
+}
+.submit:hover {
+    background-color:#005ea6;
+}

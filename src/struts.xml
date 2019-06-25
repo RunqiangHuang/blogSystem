@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--	上传最大文件大小-->
+    <constant name="struts.multipart.maxSize" value="52428800"/>
+
+    <package name="blogSystem" extends="struts-default" namespace="/">
+
+        <action name="loginAction" class="loginAction" method="login">
+            <!--            <result name="admin">/WEB-INF/pages/admin_index.jsp</result>-->
+            <result name="admin">/WEB-INF/pages/infoManage.jsp</result>
+            <result name="blogIndex" type="redirectAction">blog_toIndex</result>
+            <result name="login">/WEB-INF/pages/user-Login.jsp</result>
+        </action>
+
+        <action name="user_*" class="userAction" method="{1}">
+            <result name="admin">/WEB-INF/pages/infoManage.jsp</result>
+        </action>
+
+        <action name="type_*" class="typeAction" method="{1}">
+            <result name="typeManage">/WEB-INF/pages/typeManage.jsp</result>
+            <result name="toTypeManage" type="redirectAction">type_toTypeManage</result>
+        </action>
+
+        <action name="admin_*" class="adminAction" method="{1}">
+            <result name="toInfo">/WEB-INF/pages/infoManage.jsp</result>
+            <result name="toChangePassword">/WEB-INF/pages/changePassword.jsp</result>
+            <result name="toLogout">adminLogin.jsp</result>
+        </action>
+
+        <action name="message_*" class="messageAction" method="{1}">
+            <result name="toMessage">/WEB-INF/pages/messageManage.jsp</result>
+            <result name="toMessageManageAction" type="redirectAction">message_getMessage</result>
+            <result name="toMessageBlogAction" type="redirectAction">blog_toMessage</result>
+        </action>
+
+        <action name="article_*" class="articleAction" method="{1}">
+            <result name="articleInfo">/WEB-INF/pages/addArticle.jsp</result>
+            <result name="toSaveOrUpdateArticle">/WEB-INF/pages/addArticle.jsp</result>
+            <result name="toArticleManage">/WEB-INF/pages/articleManage.jsp</result>
+            <result name="toArticleManageAction" type="redirectAction">article_toArticleManage</result>
+        </action>
+
+        <action name="draft_*" class="draftAction" method="{1}">
+            <result name="toDraftManage">/WEB-INF/pages/draftManage.jsp</result>
+            <result name="toDraftContent">/WEB-INF/pages/addArticle.jsp</result>
+            <result name="toListAction" type="redirectAction">draft_list</result>
+        </action>
+
+        <action name="blog_*" class="blogAction" method="{1}">
+            <result name="toIndex">/WEB-INF/pages/blog-index.jsp</result>
+            <result name="toAbout">/WEB-INF/pages/blog-about.jsp</result>
+            <result name="toMessage">/WEB-INF/pages/blog-message.jsp</result>
+            <result name="toType">/WEB-INF/pages/blog-type.jsp</result>
+            <result name="toArticle">/WEB-INF/pages/blog-article.jsp</result>
+            <result name="toArticleSearch">/WEB-INF/pages/blog-search.jsp</result>
+            <result name="toLogin">/WEB-INF/pages/user-Login.jsp</result>
+            <result name="toRegister">/WEB-INF/pages/user-Register.jsp</result>
+        </action>
+
+        <action name="comment_*" class="commentAction" method="{1}">
+            <result name="toCommentManage">/WEB-INF/pages/commentManage.jsp</result>
+            <result name="toCommentManageAction" type="redirectAction">comment_toCommentManage</result>
+        </action>
+
+    </package>
+
+</struts>
+
+
+
