@@ -1,4 +1,4 @@
-# blogSystem     
+# blogSystem
 SSH的课程设计。一个简易的博客系统<br>
 博客页面利用了一个网上的模板。 后台管理界面利用layUI + jquery。部分功能利用ajax
 后端采用SSH搭建而成。没有利用maven管理jar包。
